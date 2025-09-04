@@ -1,0 +1,16 @@
+[project]
+name = "dagster-bug"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dagster>=1.11.8",
+    "dagster-webserver>=1.11.8",
+    "downstream-assets",
+    "source-assets",
+]
+
+[tool.uv.sources]
+downstream-assets = { path = "downstream-assets", editable = true }
+source-assets = { path = "source-assets", editable = true }
